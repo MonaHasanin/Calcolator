@@ -26,9 +26,9 @@ function calc() {
      alert("wellcome to calculator " + name)
      document.write("<p> Sorry ... </p>" +  name   + "<br>" + "<h1> Go Back </h1>  <button>Click here to go back</button>");
  
-     const button = document.getElementById("button");
+     const button = document.querySelector("button");
      button.addEventListener("click", function() {
-        window.location.href = "/";
+        window.history.back();
      });
     } 
    
