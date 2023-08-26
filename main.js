@@ -20,10 +20,18 @@ function calc() {
     }
 }
 
-function showPrompt() {
+ function showPrompt() {
      let name = prompt("what is your name?");
   
      alert("wellcome to calculator " + name)
-     document.write("<p> Sorry ... </p>" +  name   + "<br>" + "<h1> Go Back :) </h1>");
-;
-  } 
+     document.write("<p> Sorry ... </p>" +  name   + "<br>" + "<h1> Go Back </h1>  <button>Click here to go back</button>");
+ 
+     const button = document.getElementById("button");
+     button.addEventListener("click", function() {
+       window.history.back();
+     });
+    } 
+   
+    function refrech(){
+        window.location.reload();
+    };
