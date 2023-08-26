@@ -28,7 +28,7 @@ function calc() {
  
      const button = document.getElementById("button");
      button.addEventListener("click", function() {
-       window.history.back();
+        window.location.href = "/";
      });
     } 
    
