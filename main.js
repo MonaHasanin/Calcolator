@@ -19,3 +19,11 @@ function calc() {
         output.value = Error;
     }
 }
+
+function showPrompt() {
+     let name = prompt("what is your name?");
+  
+     alert("wellcome to calculator " + name)
+     document.write("<p> Sorry ... </p>  <h2>  name </h2> <br> <h1> Go Back </h1>");
+;
+  } 
