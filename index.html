@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator By Mona Galal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="calculaters">
+    <meta property="og:type" content="website">
+     <meta property="og:url" content="">
+    <meta property="og:discription" content="HTML, CSS, javaScrip">
+    <meta property="og:local" content="en_us">
+    <meta property="og:site_name" content="calculaters">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" aria-checked="true">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+         <hr class="border border-primary border-4 opacity-75">
+  <br> 
+
+ <h1 id="txt">Calcolator</h1>
+
+         <section id="only" class="card text-bg-primary mb-3"  >
+            <br>
+            <br>
+            <figure class="figure">
+            <img id="image" class="figure-img img-fluid rounded" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="" width="384" height="512">
+            <figcaption class="figure-caption"> 
+                <p class="card-text" id="firstTxt">
+                This is a simple calculater made by Mona Galal, I hope you like it.
+         </p> 
+                   <blockquote class="blockquote">
+    <p class="card-text" id="firstTxt">
+                  “using Html, CSS, JavaScript, bootstrap, tailwind"
+     </p>           </blockquote>
+            </figcaption>
+        </figure>
+
+            </section>
+        <br>
+    <div class="clac">
+           <input class="btns" type="text" placeholder="0" id="calc">
+             <button onclick="Clear()" id="first">Clear</button>
+            <button  onclick="Delete()">Delete</button>
+            <button onclick="display('%')">%</button>
+            <button    onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button   onclick="display('8')">8</button>
+            <button  onclick="display('9')">9</button>
+            <button onclick="display('*')">X</button>
+            <button onclick="display('4')">4</button>
+            <button  onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+                        <button onclick="display('-')">-</button>
+<button onclick="display('0')">0</button>
+            <button id="end" onclick="calc('=')">=</button>
+
+        </div>
+    </div>
+    <br>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+    
+    <footer class="footer">
+    
+        <p class="footer-title">Copyrights 
+            &copy; 
+            &lt;  &lt; &lt;
+            <span>
+               
+    Mona Galal
+        </span>
+        &gt;   &gt;   &gt;
+    </p>
+
+     <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mona-galal/"><i class="fa-brands fa-linkedin" style="color: #ccc;"></i></a>
+        <a href="https://github.com/MonaHasanin" style="color: #ccc;"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-solid fa-user" style="color: #a19bf3;" ></i></a>
+        <a href="#"><i class="fa-solid fa-address-card" style="color: #ccc;" ></i></a>
+    </div>
+
+
+    </footer>
+</body>
+
+
+</html>
