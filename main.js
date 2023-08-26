@@ -1,3 +1,5 @@
+ document.getElementById('test').innerHTML = "Welcome my friend to my page";
+
 let output = document.getElementById("calc")
 
 function display(num) {
